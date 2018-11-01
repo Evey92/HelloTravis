@@ -16,4 +16,4 @@ enable_testing()
 add_executable(TravisBuild ./TravisTest.cpp)
 
 find_package (Threads)
-target_link_libraries(BuildTravisCI gtest ${CMAKE_THREAD_LIBS_INIT})
+target_link_libraries(TravisBuild gtest ${CMAKE_THREAD_LIBS_INIT})
