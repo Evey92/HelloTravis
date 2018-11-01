@@ -15,7 +15,7 @@ addons:
 
 
 before_script:
- #- CXX=/usr/bin/g++-7 CC=/usr/bin/gcc-7 
+ - CXX=/usr/bin/g++-7 CC=/usr/bin/gcc-7 
 
 script:
  - mkdir build
@@ -23,4 +23,4 @@ script:
  - cmake ..
  - make
  - make
-  ./BuildTravisCI
+ -./TravisBuild
