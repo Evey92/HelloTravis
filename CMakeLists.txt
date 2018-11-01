@@ -13,9 +13,7 @@ set(CMAKE_BUILD_TYPE Debug)
 project(TravisBuild)
 enable_testing()
 
-SET(TARGET_SRC ./TravisTest.cpp)
-
-add_executable(TravisBuild ${TARGET_SRC})
+add_executable(TravisBuild ./TravisTest.cpp)
 
 find_package (Threads)
 target_link_libraries(BuildTravisCI gtest ${CMAKE_THREAD_LIBS_INIT})
