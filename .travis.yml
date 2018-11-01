@@ -22,4 +22,4 @@ script:
  - cd build
  - cmake ..
  - make
- -./TravisBuild
+ #-./TravisBuild
