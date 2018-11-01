@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
-include(gtest.cmake)
+#include(gtest.cmake)
 
 set(CMAKE_CXX_FLAGS)
 
