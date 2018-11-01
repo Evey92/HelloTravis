@@ -3,9 +3,6 @@ cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 #Prerequisites
 set(CMAKE_CXX_FLAGS)
 
-#set(COMMON_INCLUDES ./include/)
-#set(COMMON_SOURCES ./src/)
-
 #This variables are for setting the minimum and maximun requires for unitTesting
 set(UNITTESTING_VERSION_MAJOR 1)
 set(UNITTESTING_VERSION_MINOR 0)
