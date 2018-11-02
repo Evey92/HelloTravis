@@ -36,7 +36,6 @@ int main(int argc, char *argv[]) {
   std::cout << "Hello World!" << std::endl;
   ::testing::InitGoogleTest(&argc, argv);
   std::cout << RUN_ALL_TESTS();
-  _getch();
 
   return 0;
 }
