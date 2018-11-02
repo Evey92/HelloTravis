@@ -1,6 +1,6 @@
 #include<iostream>
 #include <gtest/gtest.h>
-#include <conio.h>
+
 
 class TMath
 {
