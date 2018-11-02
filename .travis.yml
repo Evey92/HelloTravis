@@ -1,5 +1,6 @@
-os: linux
+dist: trusty
 sudo: false
+os: linux
 language: cpp
 compiler: gcc
 
@@ -13,13 +14,10 @@ addons:
       - cmake
 
 script:
-  #- CXX=/usr/bin/g++-7 CC=/usr/bin/gcc-7
+  - CXX=/usr/bin/g++-7 CC=/usr/bin/gcc-7
   - echo "Creating build directory..."
   - mkdir build
   - cd build
   - cmake ..
   - make
   - ./TravisBuild
-
-after_script:
-  - echo "Finished script..."
