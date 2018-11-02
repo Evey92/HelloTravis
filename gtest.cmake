@@ -1,4 +1,4 @@
-set(GOOGLETEST_ROOT ${PROJECT_SOURCE_DIR}/externals/googletest CACHE STRING "Google Test source Root")
+set(GOOGLETEST_ROOT externals/googletest CACHE STRING "Google Test source Root")
 
 include_directories(SYSTEM
     ${PROJECT_SOURCE_DIR}/${GOOGLETEST_ROOT}
@@ -6,8 +6,8 @@ include_directories(SYSTEM
     )
 
 set(GOOGLETEST_SOURCES
-    ${PROJECT_SOURCE_DIR}/${GOOGLETEST_ROOT}/src/gtest-all.cc
-    ${PROJECT_SOURCE_DIR}/${GOOGLETEST_ROOT}/src/gtest_main.cc
+    ${GOOGLETEST_ROOT}/src/gtest-all.cc
+	${GOOGLETEST_ROOT}/src/gtest_main.cc
     )
 
 foreach(_source ${GOOGLETEST_SOURCES})
