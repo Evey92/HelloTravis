@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.5 FATAL_ERROR)
 
+project(TravisBuild)
 include(gtest.cmake)
 
 #Prerequisites
@@ -13,14 +14,10 @@ set(LEARN_CMAKE_VERSION_PATCH 0)
 #sets cmake to debug build
 set(CMAKE_BUILD_TYPE Debug)
 
-#PROJECT start
-project(TravisBuild)
-enable_testing()
 
-SET(TARGET_SRC ./TravisTest.cpp)
 
 #creates an executable which can be used to run in travis
-add_executable(TravisBuild ${TARGET_SRC})
+add_executable(TravisBuild TravisTest.cpp)
 
 find_package (Threads)
 target_link_libraries(TravisBuild gtest ${CMAKE_THREAD_LIBS_INIT})
